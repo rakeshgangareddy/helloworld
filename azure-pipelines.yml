@@ -8,6 +8,10 @@
 
 trigger:
 - main
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure for Students(9272baf8-04f4-4e41-a036-57df3be7ed64)'
+    command: 'build'
 
 pool:
   vmImage: ubuntu-latest
